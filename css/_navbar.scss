@@ -1,0 +1,230 @@
+.navbar {
+    height: 47px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 15px;
+    font-size: $font-size;
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        .shortcut {
+            margin-left: 20px;
+            color: $font-color1;
+            cursor: pointer;
+        }
+        .shortcut:hover {
+            text-decoration: underline;
+        }
+        .dots {
+            margin-left: 20px;
+            img {
+                opacity: 0.9;
+                width: 20px;
+                height: 20px;
+            }
+            img:hover {
+            opacity: 1;
+            }
+        }
+        .account {
+            margin-left: 20px;
+        }
+        .menu {
+            display: none;
+            width: 354px;
+            position: absolute;
+            right: 30px;
+            top: 68px;
+            border: $border;
+            border-radius: 5px;
+            box-shadow: $box-shadow;
+            .info {
+                margin: 20px 33px;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+                div {
+                    display: flex;
+                    justify-content: center;
+                }
+                .overlay-image {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    position: relative;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    a {
+                        position: absolute;
+                        bottom: -3px;
+                        right: 100px;
+                        width: 26px;
+                        height: 26px;
+                        border: 1px solid #ccc;
+                        border-color: $border-color;
+                        background-color: white;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: $box-shadow;
+                        cursor: pointer;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    a:hover {
+                        background-color: $background-hover;
+                    }
+                }
+                .name {
+                    font-weight: bold;
+                    font-size: $font-size;
+                    margin-bottom: 3px;
+                }
+                .email {
+                    margin-bottom: 14px;
+                }
+                .manage {
+                    font-size: $font-size;
+                    button {
+                        border: $border;
+                        background-color: white;
+                        color: #3c4043;
+                        padding: 8px 16px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        background-color: $background-hover;
+                    }
+                }
+                
+            }
+            .add {
+                padding-left: 33px;
+                display: flex;
+                align-items: center;
+                border-top: $border;
+                border-bottom: $border;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                span img {
+                    width: 20px;
+                    height: 20px;
+                }
+                p {
+                    font-size: $font-size;
+                    margin-left: 20px;
+                }
+            .add:hover {
+                background-color: $background-hover;
+                }
+            }
+            .exit {
+                display: flex;
+                justify-content: center;
+                border-bottom: $border;
+                padding-bottom: 10px;
+                button {
+                    border: solid 1px $border-color;
+                    background-color: white;
+                    color: #3c4043;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                    font-size: $font-size;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+            }
+            .privacity {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+                .links {
+                    cursor: pointer;
+                    margin-left: 5px;
+                    color: #5f6368;
+                }
+                .point {
+                    font-size: 15px;
+                    cursor: none;
+                }
+            }
+        }
+        .apps {
+        display: none;
+        width: 320px;
+        position: absolute;
+        right: 30px;
+        top: 68px;
+        border: solid 1px #dfe1e5;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        overflow-y: scroll;
+        height: 400px;
+        padding-top: 10px;
+            .apps-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(5,1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 30px;
+            padding: 15px;
+                .app-container {
+                    height: 70px;
+                    padding-top: 10px;
+                    padding: 8px;
+                    border-radius: 5px;
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .icon-name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            margin: 0px;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: #222;
+                        }
+                    }
+                .app-container:hover {
+                    background-color: #b3e5fa1a
+                    }
+                }
+            }
+            .more-apps {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 20px;
+                margin-top: 25px;
+                button {
+                    background-color: white;
+                    padding: 10px 15px;
+                    font-size: 14px;
+                    color: #3e64e0;
+                    border: solid 1px $border;
+                    border-radius: 5px;
+                }
+                button:hover {
+                    background-color: $border;
+                }
+            }
+        }
+    }
+}

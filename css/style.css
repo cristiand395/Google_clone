@@ -1,0 +1,377 @@
+#body {
+  height: 100vh;
+  position: relative;
+}
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 47px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-container .shortcut {
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+}
+.navbar .navbar-container .shortcut:hover {
+  text-decoration: underline;
+}
+.navbar .navbar-container .dots {
+  margin-left: 20px;
+}
+.navbar .navbar-container .dots img {
+  opacity: 0.9;
+  width: 20px;
+  height: 20px;
+}
+.navbar .navbar-container .dots img:hover {
+  opacity: 1;
+}
+.navbar .navbar-container .account {
+  margin-left: 20px;
+}
+.navbar .navbar-container .menu {
+  display: none;
+  width: 354px;
+  position: absolute;
+  right: 30px;
+  top: 68px;
+  border: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+}
+.navbar .navbar-container .menu .info {
+  margin: 20px 33px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+.navbar .navbar-container .menu .info div {
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar-container .menu .info .overlay-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.navbar .navbar-container .menu .info .overlay-image img {
+  width: 80px;
+  height: 80px;
+}
+.navbar .navbar-container .menu .info .overlay-image a {
+  position: absolute;
+  bottom: -3px;
+  right: 100px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.navbar .navbar-container .menu .info .overlay-image a img {
+  width: 15px;
+  height: 15px;
+}
+.navbar .navbar-container .menu .info .overlay-image a:hover {
+  background-color: #f2f2f2;
+}
+.navbar .navbar-container .menu .info .name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.navbar .navbar-container .menu .info .email {
+  margin-bottom: 14px;
+}
+.navbar .navbar-container .menu .info .manage {
+  font-size: 14px;
+}
+.navbar .navbar-container .menu .info .manage button {
+  border: #f2f2f2;
+  background-color: white;
+  color: #3c4043;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.navbar .navbar-container .menu .info .manage button:hover {
+  background-color: #f2f2f2;
+}
+.navbar .navbar-container .menu .add {
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+  border-top: #f2f2f2;
+  border-bottom: #f2f2f2;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar .navbar-container .menu .add span img {
+  width: 20px;
+  height: 20px;
+}
+.navbar .navbar-container .menu .add p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+.navbar .navbar-container .menu .add .add:hover {
+  background-color: #f2f2f2;
+}
+.navbar .navbar-container .menu .exit {
+  display: flex;
+  justify-content: center;
+  border-bottom: #f2f2f2;
+  padding-bottom: 10px;
+}
+.navbar .navbar-container .menu .exit button {
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: #3c4043;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.navbar .navbar-container .menu .privacity {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.navbar .navbar-container .menu .privacity .links {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #5f6368;
+}
+.navbar .navbar-container .menu .privacity .point {
+  font-size: 15px;
+  cursor: none;
+}
+.navbar .navbar-container .apps {
+  display: none;
+  width: 320px;
+  position: absolute;
+  right: 30px;
+  top: 68px;
+  border: solid 1px #dfe1e5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  height: 400px;
+  padding-top: 10px;
+}
+.navbar .navbar-container .apps .apps-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  padding: 15px;
+}
+.navbar .navbar-container .apps .apps-container .app-container {
+  height: 70px;
+  padding-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.navbar .navbar-container .apps .apps-container .app-container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.navbar .navbar-container .apps .apps-container .app-container .icon img {
+  width: 40px;
+  height: 40px;
+}
+.navbar .navbar-container .apps .apps-container .app-container .icon-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-container .apps .apps-container .app-container .icon-name p {
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #222;
+}
+.navbar .navbar-container .apps .apps-container .app-container .app-container:hover {
+  background-color: #b3e5fa1a;
+}
+.navbar .navbar-container .apps .more-apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-top: 25px;
+}
+.navbar .navbar-container .apps .more-apps button {
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #3e64e0;
+  border: solid 1px #f2f2f2;
+  border-radius: 5px;
+}
+.navbar .navbar-container .apps .more-apps button:hover {
+  background-color: #f2f2f2;
+}
+
+#main {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#main .image-container img {
+  width: 272px;
+  height: 92px;
+}
+#main .search {
+  width: 582px;
+  height: 44px;
+  border-radius: 34px;
+  border: solid 1px #f2f2f2;
+  background-color: #ffffff;
+  position: relative;
+  padding-left: auto;
+}
+#main .search span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+}
+#main .search span img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+#main .search input {
+  width: 388px;
+  height: 44px;
+  position: absolute;
+  left: 50px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+#main .search a {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  cursor: pointer;
+}
+#main .search a img {
+  width: 15px;
+  height: 22px;
+}
+#main .search:hover {
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+}
+#main .buttons {
+  display: flex;
+  justify-content: center;
+}
+#main .buttons button {
+  width: 170px;
+  height: 34px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-top: 30px;
+  color: #5F6368;
+  margin-right: 12px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+#main .buttons button:hover {
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+#main .language {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #222;
+  font-size: 14px;
+}
+#main .language a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #1a0dab;
+}
+#main .language a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  background-color: #f2f2f2;
+  color: #707070;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+#footer .country {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#footer .footer-button {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 27px;
+  margin-top: 10px;
+}
+#footer .footer-button a {
+  color: #5f6368;
+}
+#footer .footer-button .leftside {
+  display: flex;
+}
+#footer .footer-button .leftside a {
+  margin-right: 26px;
+}
+#footer .footer-button .rightside {
+  display: flex;
+}
+#footer .footer-button .rightside a {
+  margin-right: 26px;
+}

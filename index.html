@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="shortcut" href="https://www.google.com/gmail/about/#">Gmail</a>
+            <a class="shortcut" href="https://www.google.com.pe/imghp?hl=es-419&tab=wi&ogbl">Imagenes</a>
+            <div class="dots" href="" onclick="showApps()"><img src="images/dots.png" alt=""></div>
+            <div class="account" onclick="showMenu()"id="account"><img src="images/profile-icon.png"></div>
+            <div class="menu" id="menu">
+                <div class="info">
+                    <div class="overlay-image">
+                        <img src="images/profile-iconbg.png" alt="">
+                        <a><img src="images/camera.svg" alt=""></a>
+                    </div>
+                    <div class="name">Yoshi Yoshi</div>
+                    <div class="email">yoshi64@gmail.com</div>
+                    <div class="manage"><button>Administra tu Cuenta de Google</button></div>
+                </div>
+                <div class="add">
+                    <span><img src="images/add-contact.png"></span>
+                    <p>Agregar otra cuenta</p>
+                </div>
+                <div class="exit">
+                    <button>Salir</button>
+                </div>
+                <div class="privacity">
+                    <a class="links" href="https://policies.google.com/privacy?hl=es-419">Politica de Privaclassad</a>
+                    <a class="links" class="point">·</a>
+                    <a class="links" href="https://policies.google.com/terms?hl=es-419">Condiciones del Servicio</a>
+                </div>
+            </div>
+            <div class="apps" id="apps">
+                <div class="apps-container">
+                    <div class="app-container">
+                        <a href="https://myaccount.google.com/?utm_source=OGB&tab=wk&utm_medium=app">
+                            <div class="icon"><img src="images/profile-icon.png"></div>
+                            <div class="icon-name"><p>Cuenta</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/busqueda.png"></div>
+                            <div class="icon-name"><p>Búsqueda</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/negocio.png"></div>
+                            <div class="icon-name"><p>Mi negocio</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/maps.png"></div>
+                            <div class="icon-name"><p>Maps</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/youtube (3).png"></div>
+                            <div class="icon-name"><p>Youtube</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/playstore.png"></div>
+                            <div class="icon-name"><p>Play</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/news.png"></div>
+                            <div class="icon-name"><p>Noticias</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/gmail.png"></div>
+                            <div class="icon-name"><p>Gmail</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/meet.png"></div>
+                            <div class="icon-name"><p>Meet</p></div>    
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/contacts.png"></div>
+                            <div class="icon-name"><p>Contactos</p></div>    
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/drive.png"></div>
+                            <div class="icon-name"><p>Drive</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/calendar.png"></div>
+                            <div class="icon-name"><p>Calendario</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/translate.png"></div>
+                            <div class="icon-name"><p>Traductor</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/photos.png"></div>
+                            <div class="icon-name"><p>Fotos</p></div>
+                        </a>
+                    </div>
+                    <div class="app-container">
+                        <a href="">
+                            <div class="icon"><img src="images/duo.png"></div>
+                            <div class="icon-name"><p>Duo</p></div>    
+                        </a>
+                    </div>
+                </div>
+                <div class="more-apps">
+                    <button>Más productos de Google</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="main-box">
+            <div class="image-container"><img src="images/google.png"></div>
+            <div class="search">
+                <span><img src="images/search.png"></span>
+                <input type="text">
+                <a><img src="images/microphone.png" alt=""></a>
+            </div>
+            <div class="buttons">
+                <button>Buscar con Google</button>
+                <button>Me siento con suerte</button>
+            </div>
+            <div class="language">
+                <span>Ofrecido por Google en:</span>
+                <a href="">English</a>
+                <a href="">Quechua</a>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="country">Perú</div>
+        <div class="footer-button">
+            <div class="leftside">
+                <a href="https://www.google.com/intl/es-419_pe/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a href="">
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a href="">
+                <a href="https://about.google/?utm_source=google-PE&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a href="">
+                <a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a href="">
+            </div>
+            <div class="rightside">
+                <a href="https://policies.google.com/privacy?fg=1">Privacidad</a href="">
+                <a href="https://policies.google.com/terms?fg=1">Condiciones</a href="">
+                <a href="https://www.google.com/preferences?hl=es-419">Preferencias</a href="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="javascript/index.js"></script>
+</html>

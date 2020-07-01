@@ -1,0 +1,100 @@
+#main {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        img {
+            width: 272px;
+            height: 92px;
+        }
+    }
+    .search {
+    width: 582px;
+    height: 44px;
+    border-radius: 34px;
+    border: solid 1px $border;
+    background-color: #ffffff;
+    position: relative;
+    padding-left: auto;
+        span {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 16px;
+            top: 15px;
+            img {
+                width: 16px;
+                height: 16px;
+                opacity: 0.5;
+            }
+        }
+        input {
+            width: 388px;
+            height: 44px;
+            position: absolute;
+            left: 50px;
+            font-size: 16px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+        }
+        a {
+            width: 18px;
+            height: 20px;
+            position: absolute;
+            right: 20px;
+            top: 11px;
+            cursor: pointer;
+            img {
+                width: 15px;
+                height: 22px;
+            }
+        }
+    }
+    .search:hover {
+    box-shadow: $box-shadow;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        button {
+            width: 170px;
+            height: 34px;
+            background-color: $border;
+            border: none;
+            margin-top: 30px;
+            color: #5F6368;
+            margin-right: 12px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button:hover {
+            box-shadow: $box-shadow;
+            background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color: #222;
+        }
+    }
+    .language {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        color: #222;
+        font-size: 14px;
+        a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #1a0dab;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
