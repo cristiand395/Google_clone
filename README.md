@@ -4,9 +4,13 @@ En este proyecto se trata de crear un clon identico en diseño a la pagina por d
 
 ### Real
 <img src="/real.png">
+<img src="/real2.png">
+<img src="/real3.jpeg">
 
 ### Clon
 <img src="/clone.png">
+<img src="/clone2.png">
+<img src="/clone3.png">
 
 ## Lenguajes
 
